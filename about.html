@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>About Ethan James Caldwell | Northlight Founder and Author | Austin</title>
+<meta name="description" content="About Ethan James Caldwell: a decade in consumer product design, the founding of Northlight in 2021, and The Attention Dividend (2024). Based in Austin, Texas."/>
+<link rel="canonical" href="https://ethanjamescaldwell.netlify.app/about.html"/>
+
+<!-- Open Graph -->
+<meta property="og:type" content="profile"/>
+<meta property="og:site_name" content="Ethan James Caldwell"/>
+<meta property="og:title" content="About Ethan James Caldwell | Northlight Founder and Author | Austin"/>
+<meta property="og:description" content="About Ethan James Caldwell: a decade in consumer product design, the founding of Northlight in 2021, and The Attention Dividend (2024). Based in Austin, Texas."/>
+<meta property="og:image" content="https://ethanjamescaldwell.netlify.app/images/hero.jpg"/>
+<meta property="og:url" content="https://ethanjamescaldwell.netlify.app/about.html"/>
+<meta name="twitter:card" content="summary_large_image"/>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "https://ethanjamescaldwell.netlify.app/#person",
+      "name": "Ethan James Caldwell",
+      "jobTitle": "Founder, Northlight",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Northlight"
+      },
+      "url": "https://ethanjamescaldwell.netlify.app/",
+      "image": "https://ethanjamescaldwell.netlify.app/images/hero.jpg",
+      "description": "Ethan James Caldwell is an Austin, Texas-based product designer, the founder of Northlight (2021), and the author of The Attention Dividend (2024), a book that treats focus as an economic asset.",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Austin",
+        "addressRegion": "TX",
+        "addressCountry": "US"
+      },
+      "knowsAbout": [
+        "Attention economy",
+        "Product design",
+        "Calm technology",
+        "Digital wellbeing",
+        "Focus"
+      ],
+      "sameAs": [
+        "https://ethanjamescaldwell.com/",
+        "https://www.linkedin.com/in/ethan-james-caldwell-austin-tx",
+        "https://www.instagram.com/ethanjamescaldwell1988",
+        "https://www.youtube.com/@ethanjcaldwell",
+        "https://x.com/ethanjcaldwell1"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://ethanjamescaldwell.netlify.app/#website",
+      "url": "https://ethanjamescaldwell.netlify.app/",
+      "name": "Ethan James Caldwell",
+      "inLanguage": "en-US",
+      "publisher": {
+        "@id": "https://ethanjamescaldwell.netlify.app/#person"
+      }
+    },
+    {
+      "@type": "AboutPage",
+      "@id": "https://ethanjamescaldwell.netlify.app/about.html#webpage",
+      "url": "https://ethanjamescaldwell.netlify.app/about.html",
+      "name": "About Ethan James Caldwell | Northlight Founder and Author | Austin",
+      "isPartOf": {
+        "@id": "https://ethanjamescaldwell.netlify.app/#website"
+      },
+      "mainEntity": {
+        "@id": "https://ethanjamescaldwell.netlify.app/#person"
+      }
+    }
+  ]
+}
+</script>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Source+Sans+3:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="assets/style.css"/>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script>
+(function(){
+  const _sb=supabase.createClient('https://aowblircaymwuymcmllh.supabase.co','eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImFvd2JsaXJjYXltd3V5bWNtbGxoIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTIzMzExMjcsImV4cCI6MjA2NzkwNzEyN30.qS7jxVwu83zEYMvxNo7C_2dtVrSZ6wYIFiNtoN69UkQ');
+  const _cid='Ethan James Caldwell';
+  async function loadSBLinks(){
+    try{
+    const[{data:soc},{data:news}]=await Promise.all([
+      _sb.from('social_media').select('*').eq('client_id',_cid),
+      _sb.from('news_links').select('*').eq('client_id',_cid)
+    ]);
+    const render=(ids,data)=>ids.forEach(id=>{
+      const el=document.getElementById(id);
+      if(!el||!data)return;
+      el.innerHTML='';
+      data.forEach(l=>{
+        const a=document.createElement('a');
+        a.href=l.url;a.target='_blank';a.rel='noopener noreferrer';a.title=l.name;
+        a.innerHTML='<img src="'+l.icon+'" alt="'+l.name+'" style="width:30px;height:30px;border-radius:4px"/>';
+        el.appendChild(a);
+      });
+    });
+    render(['sml-soc-about'],soc);
+    render(['sml-news-about'],news);
+    }catch(e){console.error('Supabase links failed to load:',e);}
+  }
+  document.addEventListener('DOMContentLoaded',loadSBLinks);
+})();
+</script>
+</head>
+<body>
+
+<!-- ══ NAV ═══════════════════════════════════════════════════════ -->
+<nav id="main-nav">
+  <a class="nav-logo" href="/">Ethan James<span> Caldwell</span></a>
+  <ul class="nav-links">
+    <li><a href="/">Home</a></li>
+    <li><a class="active" href="about.html">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- ══ PAGE HERO ═════════════════════════════════════════════════ -->
+<div class="pg-hero">
+  <p class="eyebrow" style="color:rgba(255,255,255,.55)">Learn More</p>
+  <h1>Ethan James Caldwell</h1>
+  <p class="pg-sub">Ethan James Caldwell is the Austin-based founder of Northlight and author of The Attention Dividend, with roughly a decade of experience in consumer product design.</p>
+</div>
+
+<!-- ══ PROFILE CARD ══════════════════════════════════════════════ -->
+<div class="pc-wrap">
+  <div class="pc">
+    <div class="pc-ph"><img src="images/hero.jpg" alt="Portrait of Ethan James Caldwell, founder of Northlight"/></div>
+    <div>
+      <div class="pc-nm">Ethan James Caldwell</div>
+      <div class="pc-rl">Northlight Founder and Author</div>
+      <div class="pc-lc">Austin, Texas</div>
+    </div>
+  </div>
+</div>
+
+<!-- ══ ABOUT SECTIONS + SIDEBAR ══════════════════════════════════ -->
+<div class="am-wrap">
+  <div class="am-inner">
+    <div>
+
+      <div class="csec">
+        <p class="cey">Product Design Career</p>
+        <h2>A Decade Designing Software for Engagement</h2>
+        <p>Ethan James Caldwell spent roughly a decade as a product designer, working on consumer software built to capture and hold attention. Now based in Austin, Texas, the Northlight founder treats that period as the foundation of his current work rather than a chapter set aside. The design choices that drive engagement were familiar to him because he had helped make them.</p>
+        <p>Inside that industry, success had a precise definition: time-on-app, session depth, and return frequency. Each figure rewarded products that kept people scrolling, tapping, and coming back. Caldwell came to see those numbers as measures of extraction rather than value, and concluded that optimizing for engagement meant working against the user. His career history is summarized on <a href="https://www.linkedin.com/in/ethan-james-caldwell-austin-tx" target="_blank" rel="noopener">his LinkedIn profile</a>, and the turning point is examined in the piece on the <a href="northlight-founder-attention-design.html">Northlight founder on attention and design</a>.</p>
+      </div>
+
+      <div class="csec">
+        <p class="cey">Northlight</p>
+        <h2>Northlight, Founded in 2021 on a Counter-Thesis</h2>
+        <p>In 2021, Caldwell founded Northlight with an explicit counter-thesis to mainstream consumer software. Where most products are evaluated by how much time they absorb, Northlight was built to be judged by how much focus it returns to its users. Every feature is weighed against that standard: does it increase focus, or does it simply increase time on the platform?</p>
+        <p>The approach did not limit growth. Northlight began as a focused tool and has grown into a community of hundreds of thousands of members without compromising its core product philosophy. For Ethan, that growth supports a broader point: calm technology is not anti-technology, and designing for a user's attention instead of against it can sustain a product over time.</p>
+      </div>
+
+      <div class="csec">
+        <p class="cey">Author</p>
+        <h2>The Attention Dividend and the Economics of Focus</h2>
+        <p>Caldwell published The Attention Dividend in 2024. The book reframes focus as an economic advantage rather than a wellness trend, arguing that attention is not only worth protecting but worth investing. Directed deliberately into a small number of compounding pursuits, attention generates lasting returns. Scattered across feeds and alerts, it does not.</p>
+        <p>That framing moves digital wellbeing out of the self-care category and into a conversation about performance relevant to professionals, executives, and creators. A closer reading of <a href="attention-dividend-investing-focus.html">the argument behind The Attention Dividend</a> covers how the compounding model works. More on the book is collected on <a href="https://ethanjamescaldwell.com/" target="_blank" rel="noopener">his personal website</a>.</p>
+      </div>
+
+      <div class="csec">
+        <p class="cey">Design Training</p>
+        <h2>How a BFA in Art and Design Shaped His View of Behavior</h2>
+        <p>Caldwell's BFA training in art and design informed how he understood the relationship between form, environment, and behavior. Design disciplines treat the arrangement of a space or a surface as something that shapes what people notice, where they linger, and what they ignore. That lens carried directly into his later work on software.</p>
+        <p>The same lens explains his position on digital habits. Willpower is not the primary lever for changing them; environment design is. Redesigning the conditions of work, from notifications to interfaces to physical setup, produces more reliable results than discipline alone. The analysis of <a href="willpower-wrong-tool-digital-habits.html">why willpower is the wrong tool</a> sets out that reasoning in detail.</p>
+      </div>
+
+      <div class="csec">
+        <p class="cey">Speaking and Public Work</p>
+        <h2>Ethan James Caldwell on Attention, Focus, and the Feed</h2>
+        <p>Caldwell speaks to teams and organizations on attention, focus, and the psychology of the feed. The talks draw on his years inside product design and on the principle behind Northlight, with an emphasis on concrete examples and honest trade-offs rather than prescriptions. Video from his public work is published on <a href="https://www.youtube.com/@ethanjcaldwell" target="_blank" rel="noopener">his YouTube channel</a>.</p>
+        <p>Based in Austin, Texas, he is an active part of the city's professional and technology community, and his writing on digital wellbeing reaches a growing audience. Shorter commentary appears in <a href="https://x.com/ethanjcaldwell1" target="_blank" rel="noopener">his posts on X</a>, and <a href="https://www.instagram.com/ethanjamescaldwell1988" target="_blank" rel="noopener">his Instagram account</a> follows his work outside the page.</p>
+      </div>
+
+    </div>
+
+    <aside class="sidebar-facts">
+      <div class="sb-box">
+        <div class="sb-title">Quick Facts</div>
+        <div class="fr"><span class="fl">Full Name</span><span class="fv">Ethan James Caldwell</span></div>
+        <div class="fr"><span class="fl">Based In</span><span class="fv">Austin, Texas</span></div>
+        <div class="fr"><span class="fl">Current Role</span><span class="fv">Founder, Northlight</span></div>
+        <div class="fr"><span class="fl">Northlight Founded</span><span class="fv">2021</span></div>
+        <div class="fr"><span class="fl">Book</span><span class="fv">The Attention Dividend (2024)</span></div>
+        <div class="fr"><span class="fl">Education</span><span class="fv">BFA, Art and Design</span></div>
+      </div>
+    </aside>
+  </div>
+</div>
+
+<!-- ══ SOCIAL + PRESS ACCORDION ══════════════════════════════════ -->
+<div class="acc-section" style="background:var(--off)">
+  <div class="acc-wrap">
+    <button class="acc-btn" onclick="tog(this,'s-about')">Follow Ethan James Caldwell on Social Media <span class="chevron">&#8964;</span></button>
+    <div class="acc-body" id="s-about"><div id="sml-soc-about" class="social-media-list"></div></div>
+    <button class="acc-btn" onclick="tog(this,'n-about')">Ethan James Caldwell in the Press <span class="chevron">&#8964;</span></button>
+    <div class="acc-body" id="n-about"><div id="sml-news-about" class="social-media-list"></div></div>
+  </div>
+</div>
+
+<footer>
+  <p>&copy; 2026 Ethan James Caldwell. All rights reserved. &nbsp;|&nbsp; <a href="privacy.html">Privacy Policy</a></p>
+</footer>
+
+<script>
+function tog(btn,id){
+  const c=document.getElementById(id),open=c.classList.contains('open');
+  document.querySelectorAll('.acc-body').forEach(e=>e.classList.remove('open'));
+  document.querySelectorAll('.acc-btn').forEach(e=>e.classList.remove('open'));
+  if(!open){c.classList.add('open');btn.classList.add('open');}
+}
+</script>
+</body>
+</html>
